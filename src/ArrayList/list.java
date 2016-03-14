@@ -30,5 +30,9 @@ public class list {
             int j = list.size() - i - 1;
             System.out.println( list.get(j) );
         }
+        /*int index = catnamesList.indexOf("Рыжик");
+
+// выводим имя кота и его номер в массиве
+        editResult.setText("Рыжик числится под номером " + index);*/
     }
 }

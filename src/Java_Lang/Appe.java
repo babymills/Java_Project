@@ -40,6 +40,11 @@ public class Appe {
 
         System.out.println(b.capacity());//показывает сколь байт занимает.16 байт резервирует
         System.out.println(b);*/
+        //---------------------------------------------------------------
+        StringBuffer sb = new StringBuffer("I am Java");
+        System.out.println(sb.insert(5,"like "));
+
+
         //копирование с массиав в массив..удалить строку заменить значение
         }
     }

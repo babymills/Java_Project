@@ -34,7 +34,13 @@ public class Appe {
              System.out.println(q);
          }*/
         //---------------------------------------
+         /* StringBuffer b = new StringBuffer("cdsd");//буфер стрингов
 
+        b.setLength(3);//типо lenght только наоборот сам выделяешь сколько нужно
+
+        System.out.println(b.capacity());//показывает сколь байт занимает.16 байт резервирует
+        System.out.println(b);*/
+        //копирование с массиав в массив..удалить строку заменить значение
         }
     }
 

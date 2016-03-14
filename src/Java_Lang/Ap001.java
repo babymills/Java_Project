@@ -33,6 +33,8 @@ public class Ap001 {
                     System.out.println(" Cтoлицa - Олимпия .");
             }  while ( ! str.equals("стоп"));*/
         //------------------------------------------------------------
-
+        long s = 10000000000000L;
+        String.valueOf(s) ;
+        System.out.println(s+1000);
     }
 }

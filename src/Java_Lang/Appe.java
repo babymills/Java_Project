@@ -44,8 +44,9 @@ public class Appe {
         StringBuffer sb = new StringBuffer("I am Java");
         System.out.println(sb.insert(5,"like "));
 
-
-        //копирование с массиав в массив..удалить строку заменить значение
+        System.out.println(sb.reverse());//задом наперед
+        System.out.println(sb.delete(0,2));//удалить
+        System.out.println(sb.replace(3,4,"ccc"));//заменить
         }
     }
 

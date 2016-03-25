@@ -16,7 +16,7 @@ public class app0000 {
 
     public static void main(String[] args) throws IOException {
         InputStream src = new URL("http://google.com").openStream();
-        OutputStream dsc = new java.io.FileOutputStream("c:/idea/gg.txt");
+        OutputStream dsc = new java.io.FileOutputStream("c:/idea/g.txt");
         copy(src,dsc);
     }
     public  static void copy(InputStream src, OutputStream dsc) throws IOException {

@@ -13,15 +13,19 @@ import java.net.URL;
 public class Copy {
     public static void main(String[] args) throws IOException {
       InputStream src = new URL("http://vk.com").openStream();
-       OutputStream dst = new FileOutputStream("d:/dom.txt");
+     //  OutputStream dst = new FileOutputStream("d:/dom.txt");
         copy(src,System.out);
+
     }
     public static  void copy(InputStream src, OutputStream dst) throws IOException{
         while(true){
-            int data = src.read();
+            byte[] da = new byte[1024*64];
+            int data = src.read(da);
             if (data !=-1){
-                dst.write(data);
+                dst.write(da,0,data);
+
             }else{
+
                 return;
             }
         }

@@ -8,7 +8,7 @@ import java.io.FilenameFilter;
  */
 public class DirListOnly  {
     public static void main(String args[]) {
-        String dirname = "D:\\IdeaProjects\\javaSchool\\src";
+        String dirname = "C://idea";
         File f1 = new File(dirname);
         FilenameFilter only = new OnlyExt("txt");//фильтрует по типу файла
         String s[] = f1.list(only);

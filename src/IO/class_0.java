@@ -12,13 +12,11 @@ import java.net.URL;
 public class class_0 {
     public static void main(String[] args) throws IOException {
 
-        InputStream inFile   = new FileInputStream("D:\\IdeaProjects\\javaSchool\\src\\D.txt");
-
+        InputStream inFile   = new FileInputStream("C:\\idea\\d.txt");
         readFullyByByte(inFile);
         System.out.print("\n\n\n");
 
         InputStream inUrl = new URL("http://vk.com").openStream();
-
         readFullyByByte(inUrl);
         System.out.print("\n\n\n");
 
@@ -34,7 +32,7 @@ public class class_0 {
                 System.out.print((char) oneByte);
             } else {
                 System.out.print("\n" + "end");
-                break;
+                break;//метод что бы читать с текста сайта и байтов
             }
         }
     }

@@ -7,9 +7,9 @@ import java.io.File;
  */
 public class DirList {
     public static void main(String args[]) {
-        String dirname = "D:\\IdeaProjects\\javaSchool\\src\\IO";
+        String dirname = "C://idea";
         File f1 = new File(dirname);
-
+byte n = 0;
         if (f1.isDirectory()) {
             System.out.println("Directory of " + dirname);
             String s[] = f1.list();
@@ -19,12 +19,15 @@ public class DirList {
                 if (f.isDirectory()) {
                     System.out.println(s[i] + " is a directory");
                 } else {
-                    System.out.println(s[i] + " is a file");
+                    int v = (byte) s[i].length();
+                    n= (byte) (n+v);
+                    System.out.println(s[i] + " is a file "+s[i].length()+"bytes");
                 }
             }
         } else {
             System.out.println(dirname + " is not a directory");
         }
+        System.out.println("Сумма байтов"+n);
     }
 }
 

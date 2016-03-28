@@ -12,7 +12,7 @@ public class Copy {
     public static void main(String[] args) throws IOException {
      // InputStream src = new URL("http://vk.com").openStream();вывод с сайта
       InputStream src = new FileInputStream("C://idea//d.txt");//вывод с текста
-     OutputStream dst = new FileOutputStream("d:/dom.txt");// запись в файл
+     OutputStream dst = new FileOutputStream("C://idea//g.txt");// запись в файл
         //copy(src,System.out);//метод что запичывать и выводить даные с сайта
         copy(src,dst);//метод что запичывать и выводить даные с сайта
 
@@ -25,7 +25,8 @@ public class Copy {
                 dst.write(da,0,data);
 
             }else{
-
+                src.close();
+                dst.close();
                 return;
             }  //2 Method
         /*public static void readFullyByByte(InputStream in) throws IOException {

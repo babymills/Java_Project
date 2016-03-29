@@ -12,7 +12,7 @@ public class BufferedInputSream {
         String s = "This is a &copy; copyright symbol " +
                 "but this is &copy not.\n";
         byte buf[] = s.getBytes();
-
+        System.out.println(buf.length);
         ByteArrayInputStream in = new ByteArrayInputStream(buf);
         int c;
         boolean marked = false;

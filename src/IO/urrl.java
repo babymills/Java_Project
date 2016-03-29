@@ -14,7 +14,7 @@ public class urrl {
     public static void main(String[] args) throws IOException {
 
         InputStream src = new URL("http://google.ru").openStream();
-      //  OutputStream dsc = new java.io.FileOutputStream("c:\\idea\\g.txt");
+      //  OutputStream dsc = new java.io.FileOutputStream00("c:\\idea\\g.txt");
        // copy(src,dsc);//в файл
           copy(src,System.out);//на консоль
     }

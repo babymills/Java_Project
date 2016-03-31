@@ -18,7 +18,7 @@ public class TinyEdit {
             str[i]=br.readLine();
             if (str[i].equals("stop"))
                 break;
-            }
+        }
         System.out.println("In");
         for(int i=0;i<100;i++){
             if (str[i].equals("stop")) break;

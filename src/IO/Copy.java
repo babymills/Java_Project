@@ -14,7 +14,7 @@ public class Copy {
       InputStream src = new FileInputStream("C://idea//d.txt");//вывод с текста
      OutputStream dst = new FileOutputStream("C://idea//g.txt");// запись в файл
         //copy(src,System.out);//метод что запичывать и выводить даные с сайта
-        copy(src,dst);//метод что запичывать и выводить даные с сайта
+        copy(src,System.out);//метод что запичывать и выводить даные с сайта
 
     }
     public static  void copy(InputStream src, OutputStream dst) throws IOException{

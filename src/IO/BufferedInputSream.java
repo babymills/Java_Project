@@ -3,15 +3,16 @@ package IO;
 import java.io.BufferedInputStream;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 
 /**
  * Created by pc on 18.01.2016.
  */
 public class BufferedInputSream {
-    public static void main(String args[]) {
+    public static void main(String args[]) throws UnsupportedEncodingException {
         String s = "This is a &copy; copyright symbol " +
-                "but this is &copy not.\n";
-        byte buf[] = s.getBytes();
+                "but tрhis is &copy not.\n";
+        byte buf[] = s.getBytes("UTF-8");
         System.out.println(buf.length);
         ByteArrayInputStream in = new ByteArrayInputStream(buf);
         int c;

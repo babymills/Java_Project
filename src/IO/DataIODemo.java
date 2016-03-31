@@ -12,7 +12,8 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 
     class DataIODemo  {
-    public static void main(String[] args)throws IOException {
+    public
+    static void main(String[] args)throws IOException {
                     // First, write the data.
             try ( DataOutputStream dout =
                           new DataOutputStream(new FileOutputStream("Test.dat")) )

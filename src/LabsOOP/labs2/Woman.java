@@ -1,8 +1,5 @@
 package LabsOOP.labs2;
 
-import java.util.Random;
-import java.util.Scanner;
-
 /**
  * Created by Катя on 22.11.2015.
  */

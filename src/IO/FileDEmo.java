@@ -11,7 +11,7 @@ public class FileDEmo {
     }
 
     public static void main(String args[]) {
-        File f1 = new File("D:\\IdeaProjects\\javaSchool\\src\\IO\\A");
+        File f1 = new File("C://idea//d.txt");
 
         p("File Name: " + f1.getName());
         p("Path: " + f1.getPath());

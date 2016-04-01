@@ -1,8 +1,6 @@
 package lab2;
 
 
-import java.util.*;
-
 /**
  * Created by Катя on 26.10.2015.
  */

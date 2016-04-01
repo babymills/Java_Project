@@ -1,10 +1,13 @@
 package recursia;
-import java.io.IOException;
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Ygadai1 {
-    public static void mm (int[]vb){
+    public static void mm (int[]vb) throws IOException {
         Scanner scanner = new Scanner(System.in);
         Random rand = new Random();
         int x=0;
@@ -22,10 +25,11 @@ public class Ygadai1 {
         for(int i =0 ;i<vb.length;i++){
                   vb[i]= scanner.nextInt();
             if(vb[i]==x){
+
                 f(k);
                 break;}
             else if(vb[i]>x){
-                System.out.println("Не угaдал, меньше. Осталось "+(y-1)+"попыток(и)");
+                System.out.println("Не угaдал, меньше. Осталось "+(y-1)+"попыток(и)"+x);
             }else if(vb[i]<x){
                 System.out.println("НЕ угадал, больше. Осталось "+(y-1)+"попыток(и)"+x);
             }
@@ -39,7 +43,8 @@ public class Ygadai1 {
         System.out.println("Давай поиграем я загадаю число а ты попробуй угадать.");
         System.out.println("Выбери уровень сложности:" +'\n'+ "1.легкий. Числа от 0 до 30(попыток: 4)"+'\n'+ "2.средний. Числа от 0 до 60(попыток: 5)"+'\n'+ "3.сложный. Числа от 0 до 100(попыток 7)");
         int w =0;
-        try {    do{
+        try {
+            do{
             w = scanner.nextInt();
         if(w==3){
             int c []= new int[7];
@@ -56,10 +61,36 @@ public class Ygadai1 {
             System.out.println("Error. НЕизвестная ошибка. Возможно вы ввели символ а не цифру или арефреметическое действие");
         }}
 
-    private static void f(int i) {
+    private static void f(int i) throws IOException {
         System.out.println("Введите свое имя");
         Scanner scanner = new Scanner(System.in);
         String s = scanner.nextLine();
         System.out.println("Поздравляю "+s+" ты угaдал(а) с "+ i+"попытки");
+      String c = "Rating:  name: "+s +" c "+i+" попытки";
+        Writer out = new BufferedWriter(new OutputStreamWriter(
+                new FileOutputStream("c://idea//re.txt"), "CP1251"));
+        out.write(c);
+        out.close();
+    BufferedReader br=new BufferedReader (new InputStreamReader(
+            new FileInputStream("c://idea//re.txt"),"CP1251"));
+    String s1;
+    while ((s = br.readLine()) != null) {
+        System.out.println(s);//читает с файла текст упрощенно
     }
-}
+      /*  String pa = "c://idea//re.txt";
+        String bb = "\n"+" name: "+s +" c "+i+" попытки";
+        Files.write(Paths.get(pa),bb.getBytes(), StandardOpenOption.APPEND);
+        BufferedReader br=new BufferedReader (new InputStreamReader(
+                new FileInputStream("c://idea//re.txt"),"CP1251"));
+        String s1;
+        while ((s1 = br.readLine()) != null) {
+            System.out.println(s);//читает с файла текст упрощенно
+        }*/
+//byte[] buf = c.getBytes();
+  //      for(int u=0;u<buf.length;u++){
+    //        System.out.println(buf[u]);
+      //  }
+        //FileOutputStream f0 = new FileOutputStream("C://idea//record.txt");
+        //f0.write(buf);
+
+    }}

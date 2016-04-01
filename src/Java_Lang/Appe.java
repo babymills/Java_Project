@@ -1,11 +1,6 @@
 package Java_Lang;
 
-import lesons.S;
-
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
 
 /**
  * Created by PC on 14.03.2016.

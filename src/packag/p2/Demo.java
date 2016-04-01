@@ -1,7 +1,5 @@
 package packag.p2;
 
-import packag.p1.Prottection;
-
 /**
  * Created by pc on 12.01.2016.
  */

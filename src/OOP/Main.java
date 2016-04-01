@@ -1,7 +1,5 @@
 package OOP;
 
-import OOP.A;
-
 /**
  * Created by pc on 12.01.2016.
  */

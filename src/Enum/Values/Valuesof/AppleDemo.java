@@ -1,7 +1,5 @@
 package Enum.Values.Valuesof;
 
-import Enum.Values.Valuesof.Apple;
-
 /**
  * Created by pc on 18.01.2016.
  */

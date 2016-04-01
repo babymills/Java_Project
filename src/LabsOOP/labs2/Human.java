@@ -75,11 +75,11 @@ public abstract class Human {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Выбирите пол человека: 1- Мужчина, 0- Женщина");
         int s = scanner.nextInt();{
-        if (s == 1) {
-            sex=true;
-        }else{
-            sex=false;
-        }}
+        sex = s == 1 ? true : false;
+           // sex=true;
+        //}//else{
+          //  sex=false;
+        }//}
 
 
         System.out.println("Введите имя");

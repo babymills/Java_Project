@@ -1,7 +1,6 @@
 package LabsOOP.Labs1;
 
 import java.util.Arrays;
-import java.util.Collections;
 
 /**
  * Created by Катя on 15.11.2015.

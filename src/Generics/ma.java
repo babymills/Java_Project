@@ -1,8 +1,5 @@
 package Generics;
 
-import java.util.Arrays;
-import java.util.List;
-
 /**
  * Created by Катя on 17.11.2015.
  */

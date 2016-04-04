@@ -8,7 +8,7 @@ import java.util.ArrayList;
 /**
  * Created by привет on 26.03.2016.
  */
-public class NulNum {//ввод и ввывод текста псле наж стоп
+public class StopPrimer {//ввод и ввывод текста псле наж стоп
     public static void main(String[] args) throws IOException {
         ArrayList<String> list= new ArrayList<>();
         BufferedReader reader= new BufferedReader(new InputStreamReader(System.in));

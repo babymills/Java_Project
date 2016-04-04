@@ -1,9 +1,9 @@
-package fd;
+package nasledie;
 
 /**
  * Created by Катя on 22.10.2015.
  */
-/*class A {
+class A {
     int i,j;
 
 
@@ -45,7 +45,7 @@ class SortMoney {
 
 
     }
-}*/
+}
 
 
 

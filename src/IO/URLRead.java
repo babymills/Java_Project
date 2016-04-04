@@ -10,7 +10,7 @@ import java.net.URL;
 /**
  * Created by привет on 25.03.2016.
  */
-public class urrl {
+public class URLRead {
     public static void main(String[] args) throws IOException {
 
         InputStream src = new URL("http://google.ru").openStream();

@@ -9,7 +9,7 @@ import java.net.URL;
 /**
  * Created by pc on 18.01.2016.
  */
-public class class_0 {
+public class UrlByteString {
     public static void main(String[] args) throws IOException {
 
         InputStream inFile   = new FileInputStream("C:\\idea\\record.txt");//read file

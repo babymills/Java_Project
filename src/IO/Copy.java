@@ -12,19 +12,20 @@ public class Copy {
     public static void main(String[] args) throws IOException {
      // InputStream src = new URL("http://vk.com").openStream();вывод с сайта
       InputStream src = new FileInputStream("C://idea//d.txt");//вывод с текста
-     OutputStream dst = new FileOutputStream("C://idea//g.txt");// запись в файл
+     PrintWriter dst = new PrintWriter("C://idea//g.txt");// запись в файл
         //copy(src,System.out);//метод что запичывать и выводить даные с сайта
-        copy(src,System.out);//метод что запичывать и выводить даные с сайта
+        copy(src,dst);//метод что запичывать и выводить даные с сайта
 
     }
-    public static  void copy(InputStream src, OutputStream dst) throws IOException{
+    public static  void copy(InputStream src,PrintWriter dst) throws IOException{
         while(true){
+            String s;
+            int c =1;
             byte[] da = new byte[1024*64];
             int data = src.read(da);
             if (data !=-1){
-                dst.write(da,0,data);
-
-            }else{
+                dst.println(c++ +": "+data);
+       }else{
                 src.close();
                 dst.close();
                 return;

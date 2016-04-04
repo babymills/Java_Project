@@ -1,4 +1,4 @@
-package fd;
+package nasledie;
 
 /**
  * Created by Катя on 22.10.2015.

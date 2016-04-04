@@ -1,9 +1,9 @@
-package fd;
+package nasledie;
 
 /**
  * Created by Катя on 22.10.2015.
  */
-/*class Sta {
+class Sta {
     static  void Test(int...v){
         System.out.print("Количество:"+v.length+" Содержимое : ");
         for(int x:v)
@@ -19,4 +19,3 @@ package fd;
 
     }
 }
-*/

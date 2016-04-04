@@ -6,7 +6,7 @@ import java.io.IOException;
 /**
  * Created by привет on 28.03.2016.
  */
-public class Aa11111 {
+public class InfoToFile {
     public static void main(String[] args) throws IOException {
         File f = new File("C://idea//d.txt");
         System.out.println(f.getAbsoluteFile());

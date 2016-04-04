@@ -2,9 +2,6 @@ package IO;
 
 import java.io.*;
 
-import static IO.class_0.readFullyByByte;
-import static java.lang.System.in;
-
 /**
  * Created by привет on 27.03.2016.
  */

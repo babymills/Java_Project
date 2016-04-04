@@ -5,12 +5,13 @@ import java.io.*;
 /**
  * Created by привет on 31.03.2016.
  */
-public class uu {
+public class ReadWriteFileInCODINg {
     public static void main(String[] args) throws IOException {
-        String c = "Таблица рекордов:  Имя: " +" c "+" попытки";
+        int c1=1;
+        String c = "Таблица рекордов:"+"\n"+"  Имя: " +" c "+" попытки";
         Writer out = new BufferedWriter(new OutputStreamWriter(
-                new FileOutputStream("c://idea//re.txt"), "UTF8"));
-        out.write(c);
+                new FileOutputStream("c://idea//d.txt"), "CP1251"));
+        out.write(c1++ + ": "+c);
         out.close();
     //    InputStream inFile   = new BufferedReader(new InputStreamReader(new
       //          FileInputStream("C:\\idea\\re.txt"),"UTF-8"));

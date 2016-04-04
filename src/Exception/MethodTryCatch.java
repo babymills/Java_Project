@@ -5,7 +5,7 @@ import java.sql.SQLException;
 /**
  * Created by PC on 11.03.2016.
  */
-public class aapp00 {
+public class MethodTryCatch {
     void a() throws Error{
         try {
             b();

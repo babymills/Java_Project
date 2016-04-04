@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * Created by PC on 04.03.2016.
  */
-public class App000 {
+public class TryFinal {
     public static void main(String[] args) {
 
 

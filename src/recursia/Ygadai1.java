@@ -7,6 +7,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Ygadai1 {
+
     public static void mm (int[]vb) throws IOException {
         Scanner scanner = new Scanner(System.in);
         Random rand = new Random();
@@ -66,31 +67,19 @@ public class Ygadai1 {
         Scanner scanner = new Scanner(System.in);
         String s = scanner.nextLine();
         System.out.println("Поздравляю "+s+" ты угaдал(а) с "+ i+"попытки");
-      String c = "Rating:  name: "+s +" c "+i+" попытки";
+      String c = "name: "+s +" c "+i+" попытки";
         Writer out = new BufferedWriter(new OutputStreamWriter(
-                new FileOutputStream("c://idea//re.txt"), "CP1251"));
-        out.write(c);
+                new FileOutputStream("c://io//re.txt",true), "CP1251"));
+        out.append("\n");
+        out.append(c);
         out.close();
-    BufferedReader br=new BufferedReader (new InputStreamReader(
-            new FileInputStream("c://idea//re.txt"),"CP1251"));
-    String s1;
-    while ((s = br.readLine()) != null) {
-        System.out.println(s);//читает с файла текст упрощенно
-    }
-      /*  String pa = "c://idea//re.txt";
-        String bb = "\n"+" name: "+s +" c "+i+" попытки";
-        Files.write(Paths.get(pa),bb.getBytes(), StandardOpenOption.APPEND);
         BufferedReader br=new BufferedReader (new InputStreamReader(
-                new FileInputStream("c://idea//re.txt"),"CP1251"));
+                new FileInputStream("c://io//re.txt"),"CP1251"));
         String s1;
         while ((s1 = br.readLine()) != null) {
-            System.out.println(s);//читает с файла текст упрощенно
-        }*/
-//byte[] buf = c.getBytes();
-  //      for(int u=0;u<buf.length;u++){
-    //        System.out.println(buf[u]);
-      //  }
-        //FileOutputStream f0 = new FileOutputStream("C://idea//record.txt");
-        //f0.write(buf);
+            System.out.println(s1);//читает с файла текст упрощенно
+        }
+
 
     }}
+

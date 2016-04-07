@@ -37,7 +37,7 @@ public class fv {
 
         }
             System.out.println();
-            System.out.println("Modificate list ");
+            System.out.println("Modificate ArrayListDemo ");
             while(litr.hasPrevious()){
                 String element = litr.previous();
                 System.out.print(element + " ");

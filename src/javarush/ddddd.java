@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class ddddd {
   //  public static void main(String[] args) throws Exception
    // {
-      /*  ArrayList<String> list = new ArrayList<String>();
+      /*  List<String> ArrayListDemo = new List<String>();
 
         int index = 0;
 
@@ -20,31 +20,31 @@ public class ddddd {
 
         for(int i = 0; i < 5; i++)
         {
-            list.add(reader.readLine());}
-        for(int i=0;i<list.size();i++) {
-            index = list.get(0).length();
-            if (index < list.get(i).length())
+            ArrayListDemo.add(reader.readLine());}
+        for(int i=0;i<ArrayListDemo.size();i++) {
+            index = ArrayListDemo.get(0).length();
+            if (index < ArrayListDemo.get(i).length())
                 index = i;
         }
-        System.out.println(list.get(index));
-        for(int i  =0;i<list.size();i++){
-            if(list.get(i).length()==list.get(index).length()){
-                System.out.println(list.get(i));
+        System.out.println(ArrayListDemo.get(index));
+        for(int i  =0;i<ArrayListDemo.size();i++){
+            if(ArrayListDemo.get(i).length()==ArrayListDemo.get(index).length()){
+                System.out.println(ArrayListDemo.get(i));
             }
         }
     }
 }*/
         /*BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        ArrayList<String> list = new ArrayList<String>();
+        List<String> ArrayListDemo = new List<String>();
         int index = 0;
         int max = 0;
         String longest = null;
         for (int i = 0; i < 5; i++){
             String s = reader.readLine();
-            list.add(s);
+            ArrayListDemo.add(s);
         }
-        for (int i = 0; i < list.size(); i++){
-            String s = list.get(i);
+        for (int i = 0; i < ArrayListDemo.size(); i++){
+            String s = ArrayListDemo.get(i);
             if (s.length() > max){
                 max = s.length();
                 longest = s;
@@ -52,25 +52,25 @@ public class ddddd {
         }
         //System.out.println(longest);
 
-        for(int i=0;i<list.size();i++) {
-            index = list.get(0).length();
-            if (index < list.get(i).length())
+        for(int i=0;i<ArrayListDemo.size();i++) {
+            index = ArrayListDemo.get(0).length();
+            if (index < ArrayListDemo.get(i).length())
                 index = i;}
-        for(int i  =0;i<list.size();i++){
-            if(list.get(i).length()==list.get(index).length()){
-                System.out.println(list.get(i));
+        for(int i  =0;i<ArrayListDemo.size();i++){
+            if(ArrayListDemo.get(i).length()==ArrayListDemo.get(index).length()){
+                System.out.println(ArrayListDemo.get(i));
     }}}}*/
         /*BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        ArrayList<String> list = new ArrayList<String>();
+        List<String> ArrayListDemo = new List<String>();
         int index = 0;
         int max = 100;
         String longest = null;
         for (int i = 0; i < 5; i++){
             String s = reader.readLine();
-            list.add(s);
+            ArrayListDemo.add(s);
         }
-        for (int i = 0; i < list.size(); i++){
-            String s = list.get(i);
+        for (int i = 0; i < ArrayListDemo.size(); i++){
+            String s = ArrayListDemo.get(i);
             if (s.length() < max){
                 max = s.length();
                 longest = s;
@@ -78,35 +78,35 @@ public class ddddd {
         }
         //System.out.println(longest);
 
-        for(int i=0;i<list.size();i++) {
-            index = list.get(0).length();
-            if (index < list.get(i).length())
+        for(int i=0;i<ArrayListDemo.size();i++) {
+            index = ArrayListDemo.get(0).length();
+            if (index < ArrayListDemo.get(i).length())
                 index = i;}
-        for(int i  =0;i<list.size();i++){
-            if(list.get(i).length()==list.get(index).length()){
-                System.out.println(list.get(i));
+        for(int i  =0;i<ArrayListDemo.size();i++){
+            if(ArrayListDemo.get(i).length()==ArrayListDemo.get(index).length()){
+                System.out.println(ArrayListDemo.get(i));
             }}}}*/
-      /*  ArrayList<String> list = new ArrayList<>();
+      /*  List<String> ArrayListDemo = new List<>();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         for (int i=0;i<5;i++){
-            list.add(reader.readLine());
+            ArrayListDemo.add(reader.readLine());
         }
-        int x = list.size()-1;
+        int x = ArrayListDemo.size()-1;
         String s = "";
         for(int i=0;i<13;i++){
 
-            s= list.get(x);
-            list.remove(x);
-            list.add(0,s);
+            s= ArrayListDemo.get(x);
+            ArrayListDemo.remove(x);
+            ArrayListDemo.add(0,s);
         }
-        for(int i=0;i<list.size();i++){
-            System.out.println(list.get(i));
+        for(int i=0;i<ArrayListDemo.size();i++){
+            System.out.println(ArrayListDemo.get(i));
 
         }
           }
 }*/
         /*BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        List<Integer> ArrayListDemo = new List<Integer>();
 
         while (true)
         {
@@ -115,9 +115,9 @@ public class ddddd {
 
             int x = Integer.parseInt(s);
             if (x % 2 == 0)  //проверяем, что остаток от деления на два равен нулю
-                list.add(x);          //добавление в конец
+                ArrayListDemo.add(x);          //добавление в конец
             else
-                list.add(0, x);      //вставка в начало
+                ArrayListDemo.add(0, x);      //вставка в начало
         }
     }}*/
         public static void main(String[] args) throws Exception

@@ -14,10 +14,10 @@ public class PrWriter {
 
             list.mark(2);
 
-        //int c =list.available();
+        //int c =ArrayListDemo.available();
         //System.out.println(c);
-     //   list.close();
-      //  readFullyByByte(list);//повторный вызов клоз вызовет ошибку
+     //   ArrayListDemo.close();
+      //  readFullyByByte(ArrayListDemo);//повторный вызов клоз вызовет ошибку
     }catch (IOException r){
             System.out.println("Error");
         }}

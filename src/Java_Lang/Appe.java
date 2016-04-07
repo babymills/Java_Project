@@ -17,15 +17,15 @@ public class Appe {
         System.out.println(v);
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        ArrayList<String> list = new ArrayList<>();
+        List<String> ArrayListDemo = new List<>();
         for(int i  = 0;i<5;i++) {
             String sqw = reader.readLine();
-          list.add(sqw);
+          ArrayListDemo.add(sqw);
             while (sqw.isEmpty()) {
                 break;
             }
         }
-         for(String q:list){
+         for(String q:ArrayListDemo){
              System.out.println(q);
          }*/
         //---------------------------------------

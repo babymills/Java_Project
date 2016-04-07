@@ -16,7 +16,7 @@ int c ;
 int c0 = 0,c1= 0,c2= 0,c3= 0,c4= 0,c5= 0,c6= 0,c7= 0,c8= 0;
         for (int i=0;i<100;i++){
             for (int y=0;y<35;y++){
-                      //Thread.sleep(6);
+                      Thread.sleep(6);
 
                 c=(int)(Math.random()*9);
                 list.add(c);

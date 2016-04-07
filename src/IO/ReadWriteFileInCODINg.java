@@ -5,7 +5,7 @@ import java.io.*;
 /**
  * Created by привет on 31.03.2016.
  */
-public class uu {
+public class ReadWriteFileInCODINg {
     public static void main(String[] args) throws IOException {
         String c = "Таблица рекордов:  Имя: " +" c "+" попытки";
         Writer out = new BufferedWriter(new OutputStreamWriter(

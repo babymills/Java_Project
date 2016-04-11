@@ -12,9 +12,9 @@ public class ReadWriteFileInCODINg {
                 new FileOutputStream("c://idea//re.txt"), "UTF8"));
         out.write(c);
         out.close();
-    //    InputStream inFile   = new BufferedReader(new InputStreamReader(new
-      //          FileInputStream("C:\\idea\\re.txt"),"UTF-8"));
-     //   readFullyByByte(inFile);
+        //InputStream inFile   = new BufferedReader(new InputStreamReader(new
+          //    FileInputStream("C:\\idea\\re.txt"),"UTF-8"));
+        //readFullyByByte(inFile);
 
 
     }

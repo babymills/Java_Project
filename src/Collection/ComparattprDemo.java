@@ -17,7 +17,9 @@ public class ComparattprDemo {
         list.add(new Item(4,4.2,"ddd"));
         Comparator<Item> comparator = new Comparator<Item>() {
 
-            public int compare(Item o1, Item o2) {
+            public int compare(Item o1, Item o2)
+            {
+
                 return Double.compare(o2.getPrice(), o1.getPrice());
             }
         };

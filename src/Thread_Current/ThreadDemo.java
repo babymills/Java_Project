@@ -1,4 +1,4 @@
-package Current;
+package Thread_Current;
 
 /**
  * Created by pc on 14.01.2016.

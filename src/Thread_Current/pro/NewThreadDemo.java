@@ -1,4 +1,4 @@
-package Thread_Current;
+package Thread_Current.pro;
 
 /**
  * Created by pc on 14.01.2016.

@@ -6,6 +6,7 @@ package Thread_Current.info;
 public class RunDemo {
     public static void main(String[] args) {
         Runnable r = new RunnableImpl();
-        r.run();
+        Thread thread = new Thread(r);
+        thread.start();
     }
 }
